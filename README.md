@@ -26,9 +26,9 @@ A lot of information on using and learning PowerShell can be found on [MicroSoft
 Aside from `Get-Help` there are a few other cmdlets that will help you learn how PowerShell works and what your PowerShell version and install on any particular system might have available to it.
 
 1. `Get-Command` Gets the available cmdlets and functions on a system.
-    a. Default alias: gcm
+    1. Default alias: gcm
 2. `Get-Variable`. Gets the variables set on a system.
-    a. Default alias: gv
+    1. Default alias: gv
 3. `Get-Alias`. Gets the alias’s set on system. 
-    a. Default alias: gal
+    1. Default alias: gal
 4. `Get-Verb`. Gets the available cmdlets verbs on system.
