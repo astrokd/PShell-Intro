@@ -1,0 +1,15 @@
+{
+    "MD033": {
+      "allowed_elements": [
+        "nobr",
+        "details",
+        "summary",
+        "code",
+        "br",
+        "b"
+      ]
+    },
+    "MD013": {
+        "line_length": 425 
+    }
+  }
