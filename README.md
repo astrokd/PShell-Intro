@@ -47,6 +47,14 @@ Aside from `Get-Help` there are a few other cmdlets that will help you learn how
 
 ### The Pipeline
 
-The Pipeline in PowerShell is what is refered to when you chain cmdlets togther in complex chain.  The output of the first cmdlet is piped to the next.  The cmdlets are separated by the pipe character, `|`.
+The Pipeline in PowerShell is what is refered to when you chain cmdlets togther in complex chain.  The output of the first cmdlet is the input to the next.  The cmdlets are separated by the pipe character, `|`.
 
 For example: ` Command-1 | Command-2 | Command-3 `
+
+PowerShell cmdlets output and accept objects in their operation.  So you could use a Get- command to get data, then the Where-Object to filter the data, Sort-Object to sort it, and a Format command to format it.
+
+For example: ` Get-ChildItem -Path *.txt | Where-Object {$_.length -gt 10000} | Sort-Object -Property length | Format-Table -Property name, length `
+
+The above example gets txt files where the length is greater than 10000, then sorts them by length and formats them in a table with name and length.
+
+
